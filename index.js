@@ -17,9 +17,9 @@
 
 
 let nome = "NightWolf";
-let xp = 8500;
+let xp = 8.500;
 let nivel = ""; 
-if (xp < 1000) {
+if (xp <= 1000) {
     nivel = "Ferro";
 }   
 else if (xp >= 1001 && xp <= 2000) {
@@ -42,6 +42,7 @@ else if (xp >= 9001 && xp <= 10000) {
 }
 else if (xp >= 10001) {
     nivel = "Radiante";
-}   
+}
+// Utilizei interpolação $ antes dos {} para inserir as variáveis dentro da string e evitar utilizar o operador de soma (+)   
 console.log(`O Herói de nome ${nome} está no nível de ${nivel}`);
 
